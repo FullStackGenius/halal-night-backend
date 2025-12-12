@@ -3,14 +3,6 @@
 return [
     'mode'                     => '',
     'format'                   => 'A4',
-    // 'default_font_size'        => '12',
-    //'default_font'             => 'sans-serif',
-    // 'margin_left'              => 10,
-    // 'margin_right'             => 10,
-    // 'margin_top'               => 10,
-    // 'margin_bottom'            => 10,
-    // 'margin_header'            => 0,
-    // 'margin_footer'            => 0,
     'orientation'              => 'P',
     'title'                    => 'Laravel mPDF',
     'subject'                  => '',
@@ -18,27 +10,48 @@ return [
     'watermark'                => '',
     'show_watermark'           => false,
     'show_watermark_image'     => false,
-    //'watermark_font'           => 'sans-serif',
-    'custom_font_dir' => public_path('fonts/Poppins/'),
-'custom_font_data' => [
-    'poppins' => [
-        'R'  => 'Poppins-Regular.ttf',
-        'M'  => 'Poppins-Medium.ttf',
-        'SB' => 'Poppins-SemiBold.ttf',
-        'B'  => 'Poppins-Bold.ttf',
+
+    // <<< Use storage_path('fonts') if your fonts are in storage/fonts
+    'custom_font_dir' => storage_path('fonts'),
+
+    'custom_font_data' => [
+        // family name => mapping of styles to files
+        'poppins' => [
+            'R'  => 'Poppins-Regular.ttf',
+            'M'  => 'Poppins-Medium.ttf',
+            'SB' => 'Poppins-SemiBold.ttf',
+            'B'  => 'Poppins-Bold.ttf',
+        ],
+        'scheherazade' => [
+            'R' => 'ScheherazadeNew-Regular.ttf',
+            'B' => 'ScheherazadeNew-Bold.ttf',
+        ],
+        'notonaskh' => [
+            'R' => 'NotoNaskhArabic-Regular.ttf',
+        ],
+         'amiri' => [
+        'R'  => 'Amiri-Regular.ttf',
+        'B'  => 'Amiri-Bold.ttf',
+        'I'  => 'Amiri-Italic.ttf',
+        'BI' => 'Amiri-BoldItalic.ttf',
     ],
-],
-'default_font' => 'poppins',
+     'notosansarabic' => [
+        'R' => 'NotoSansArabic-Regular.ttf',
+    ],
+    ],
+
+    'default_font' => 'scheherazade',
+
     'display_mode'             => 'fullpage',
     'watermark_text_alpha'     => 0.1,
     'watermark_image_path'     => '',
     'watermark_image_alpha'    => 0.2,
     'watermark_image_size'     => 'D',
     'watermark_image_position' => 'P',
-    'custom_font_dir'          => '',
-    'custom_font_data'         => [],
-    'auto_language_detection'  => false,
+
+    // temp dir for mPDF
     'temp_dir'                 => storage_path('app'),
+    'auto_language_detection'  => true,
     'pdfa'                     => false,
     'pdfaauto'                 => false,
     'use_active_forms'         => false,

@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <style>
         body {
-            font-family: 'Poppins';
+            font-family: 'poppins';
         }
     </style>
 </head>
@@ -32,7 +32,7 @@
                                 <!-- Top Arabic Bismillah -->
                                 <div class="top-text" style="text-align: center;">
                                     <h3 class="normal-text"
-                                        style="color: #89693A; font-size: 30px; line-height: 40px; font-weight: 400; font-family: 'Poppins';">
+                                        style="color: #89693A; font-size: 30px; line-height: 40px; font-weight: 400; font-family: scheherazade; direction: rtl;">
                                         بسمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</h3>
                                     <p
                                         style="color: #89693A; font-size: 26px; line-height: 36px; font-family: poppins-medium; letter-spacing: 2px;margin: 0px;">
@@ -59,7 +59,7 @@
 
                                 <div class="duration-col" style="padding: 0px 0px 20px">
                                     <h3 class="cert-head"
-                                        style="color: #89693A; font-size: 26px; line-height: 36px; font-weight: 700; font-family: 'Poppins'; letter-spacing: 2px; text-align:center; text-transform: uppercase; padding: 0px 0px 10px; margin: 0px 0px 0px;">
+                                        style="color: #89693A; font-size: 26px; line-height: 36px; font-weight: 700; font-family: 'poppins-bold'; letter-spacing: 2px; text-align:center; text-transform: uppercase; padding: 0px 0px 10px; margin: 0px 0px 0px;">
                                         This certifies that
                                     </h3>
 
@@ -70,7 +70,7 @@
                                         <tr style="max-width:801px; margin:auto; text-align:center;width: 100%;">
                                             <td style="width:45%;border-bottom:1px solid #000000">
                                                 <span
-                                                    style="width:100%; font-size:24px; font-weight:600; font-family:'Poppins'; color:#89693A;">
+                                                    style="width:100%; font-size:24px; font-weight:600; font-family:'poppins'; color:#89693A;">
                                                     {{ $contract->husbandName }}
                                                 </span>
 
@@ -82,7 +82,7 @@
 
                                             <td style="width:45%;border-bottom:1px solid #000000">
                                                 <span
-                                                    style="width:100%; font-size:24px; font-weight:600; font-family:'Poppins';color:#89693A;">
+                                                    style="width:100%; font-size:24px; font-weight:600; font-family:'poppins';color:#89693A;">
                                                     {{ $contract->wifeName }}
                                                 </span>
 
@@ -108,7 +108,7 @@
                                                 RECITAL TEXT
                                             </h3>
                                             <p
-                                                style="font-size:26px; line-height:34px; color:#4C3D2C; font-family:poppins-regular;padding: 10px 0px 0px; margin: 0px;">
+                                                style="font-size:26px; line-height:34px; color:#4C3D2C; font-family:scheherazade;padding: 10px 0px 0px; margin: 0px;">
                                                 زَوَّجْتُكَ نَفْسِي فِي الْمُدَّةِ الْمَعْلُومَةِ عَلَى الْمَهْرِ
                                                 الْمَعْلُومِ
                                             </p>
@@ -272,7 +272,7 @@
                                                 <img src="{{ $contract->signature_husband_base64 }}"
                                                     style="height:auto;border-bottom:1px solid #000000;margin-bottom:8px;">
                                                 <p
-                                                    style="width:100%; font-size:24px; font-weight:bold; font-family:'Poppins'; color:#89693A;margin-top:8px;">
+                                                    style="width:100%; font-size:24px; font-weight:bold; font-family:'poppins'; color:#89693A;margin-top:8px;">
                                                     Signature Of Male
                                                 </p>
 
@@ -286,7 +286,7 @@
                                                 <img src="{{ $contract->signature_wife_base64 }}"
                                                     style="height:auto;border-bottom:1px solid #000000;margin-bottom:8px;">
                                                 <p
-                                                    style="width:100%; font-size:24px; font-weight:bold; font-family:'Poppins';color:#89693A;">
+                                                    style="width:100%; font-size:24px; font-weight:bold; font-family:'poppins';color:#89693A;">
                                                     Signature Of Female
                                                 </p>
 
