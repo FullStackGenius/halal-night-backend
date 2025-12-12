@@ -75,7 +75,7 @@ class MarriageContractController extends Controller
                 'contract' => $contract
             ], [], [
                 //'format' => 'letter',
-                'format'        => [395, 395],  // US Letter Landscape (Width x Height in mm)
+                'format'        => [403, 403],  // US Letter Landscape (Width x Height in mm)
                 'orientation'   => 'L',             // Landscape
                 'margin_left'   => 0,
                 'margin_right'  => 0,
