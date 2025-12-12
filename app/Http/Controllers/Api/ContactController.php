@@ -12,13 +12,13 @@ class ContactController extends Controller
 {
     public function contactUs(Request $request)
     {
-        $validated = $request->validate([
-            'name' => 'required|string',
-            'email' => 'required|email',
-            'reason' => 'required|string',
-            'subject' => 'required|string',
-            'message' => 'required|string',
-        ]);
+        // $validated = $request->validate([
+        //     'name' => 'required|string',
+        //     'email' => 'required|email',
+        //     'reason' => 'required|string',
+        //     'subject' => 'required|string',
+        //     'message' => 'required|string',
+        // ]);
 
         $name = $request->name;
         $email = $request->email;
